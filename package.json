@@ -8,14 +8,25 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "release": "turbo run build --filter=docs^... && changeset publish",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "eslint": "^8.48.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "tsconfig": "workspace:*",
     "turbo": "latest"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "pnpm format",
+      "pnpm lint"
+    ]
   },
   "packageManager": "pnpm@8.6.10"
 }
