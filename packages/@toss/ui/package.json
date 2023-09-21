@@ -1,10 +1,7 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "sideEffects": false,
+  "main": "index.ts",
   "license": "MIT",
   "files": [
     "dist/**"
