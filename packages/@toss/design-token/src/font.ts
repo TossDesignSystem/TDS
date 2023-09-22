@@ -4,19 +4,19 @@ export const FontCSS = css`
   @font-face {
     font-family: "Tossface";
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: url("https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css");
   }
   @font-face {
     font-family: "Tossface";
     font-style: normal;
-    font-weight: 500;
+    font-weight: medium;
     src: url("https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css");
   }
   @font-face {
     font-family: "Tossface";
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     src: url("https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css");
   }
 `;
