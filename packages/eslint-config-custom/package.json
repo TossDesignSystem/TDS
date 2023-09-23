@@ -5,7 +5,9 @@
   "private": true,
   "devDependencies": {
     "@vercel/style-guide": "^5.0.0",
+    "eslint-config-react": "^1.1.7",
     "eslint-config-turbo": "^1.10.12",
+    "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-mdx": "^2.2.0",
     "eslint-plugin-storybook": "^0.6.13"
   }
