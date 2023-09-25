@@ -13,7 +13,7 @@ const meta: Meta<ButtonProps> = {
     },
     styleType: {
       control: { type: "radio" },
-      options: ["primary", "lightSolid", "solidSub"],
+      options: ["primary", "solidLight", "solidSub"],
     },
     onClick: () => console.log("clicked!!"),
   },

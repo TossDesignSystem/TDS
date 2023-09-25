@@ -39,7 +39,7 @@ const applyButtonColor = (styleType: ButtonStyleType) => {
         background-color: #3182f6;
         color: #f9fafb;
       `;
-    case "lightSolid":
+    case "solidLight":
       return css`
         background-color: #e8f3ff;
         color: #1b64da;
