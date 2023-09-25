@@ -14,8 +14,12 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
+
+      - name: Change to specific directory
+        run: cd packages/@toss/ui
       - run: pnpm
-        #👇 Adds Chromatic as a step in the workflow
+
+      #👇 Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
         # Options required for Chromatic's GitHub Action
         with:
