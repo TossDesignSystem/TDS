@@ -35,7 +35,10 @@ const applyButtonSizeStyle = (size: ButtonSize) => {
 const applyButtonColor = (styleType: ButtonStyleType) => {
   switch (styleType) {
     case "primary":
-      return css``;
+      return css`
+        background-color: #3182f6;
+        color: #f9fafb;
+      `;
   }
 };
 
@@ -46,6 +49,8 @@ const Button = styled.button<ButtonProps>`
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  ${({ width }) => width}
+  ${({ styleType }) => styleType && applyButtonColor(styleType)}
   ${({ size }) => size && applyButtonSizeStyle(size)}
 `;
 

@@ -6,10 +6,21 @@ export const Button = forwardRef(function Button(
   props: ButtonProps,
   ref: ForwardedRef<HTMLButtonElement>
 ) {
-  const { size = "medium", width = "100%", children } = props;
+  const {
+    styleType = "primary",
+    size = "medium",
+    width = "100%",
+    children,
+  } = props;
 
   return (
-    <Styled.Button ref={ref} size={size} {...props}>
+    <Styled.Button
+      ref={ref}
+      styleType={styleType}
+      size={size}
+      width={width}
+      {...props}
+    >
       {children}
     </Styled.Button>
   );
