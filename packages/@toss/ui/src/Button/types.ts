@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-export type ButtonStyleType = "primary";
+export type ButtonStyleType = "primary" | "lightSolid";
 export type ButtonSize = "small" | "medium" | "large";
 export type ButtonProps = {
   /**
