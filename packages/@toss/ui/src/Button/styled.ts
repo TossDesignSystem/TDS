@@ -44,6 +44,11 @@ const applyButtonColor = (styleType: ButtonStyleType) => {
         background-color: #e8f3ff;
         color: #1b64da;
       `;
+    case "solidSub":
+      return css`
+        background-color: #f2f4f6;
+        color: #4e5968;
+      `;
   }
 };
 
