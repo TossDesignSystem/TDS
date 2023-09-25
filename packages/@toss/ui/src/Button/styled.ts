@@ -49,9 +49,9 @@ const Button = styled.button<ButtonProps>`
   border: none;
   cursor: pointer;
   border-radius: 6px;
-  ${({ width }) => width}
   ${({ styleType }) => styleType && applyButtonColor(styleType)}
   ${({ size }) => size && applyButtonSizeStyle(size)}
+  ${({ width }) => width}
 `;
 
 export const Styled = { Button };
