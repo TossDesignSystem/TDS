@@ -13,7 +13,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_249e22cda346a5c"
+    "chromatic": "bash ./scripts/chromatic_publish.sh"
   },
   "devDependencies": {
     "@emotion/css": "^11.11.2",
