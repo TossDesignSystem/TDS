@@ -17,7 +17,7 @@ jobs:
 
       - name: Change to specific directory
         run: cd packages/@toss/ui
-      - run: pnpm
+      - run: pnpm run build-storybook
 
       #👇 Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
