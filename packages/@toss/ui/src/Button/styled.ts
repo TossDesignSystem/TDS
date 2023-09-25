@@ -37,17 +37,26 @@ const applyButtonColor = (styleType: ButtonStyleType) => {
     case "primary":
       return css`
         background-color: #3182f6;
-        color: #f9fafb;
+        color: #ffffff;
+        &:hover {
+          background-color: #1b64da;
+        }
       `;
     case "solidLight":
       return css`
         background-color: #e8f3ff;
         color: #1b64da;
+        &:hover {
+          background-color: #c9e2ff;
+        }
       `;
     case "solidSub":
       return css`
         background-color: #f2f4f6;
         color: #4e5968;
+        &:hover {
+          background-color: #d1d6db;
+        }
       `;
   }
 };
@@ -59,6 +68,9 @@ const Button = styled.button<ButtonProps>`
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    color 0.1s ease;
   ${({ styleType }) => styleType && applyButtonColor(styleType)}
   ${({ size }) => size && applyButtonSizeStyle(size)}
   ${({ width }) => width}

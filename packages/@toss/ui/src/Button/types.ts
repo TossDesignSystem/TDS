@@ -5,7 +5,7 @@ export type ButtonSize = "small" | "medium" | "large";
 export type ButtonProps = {
   /**
    * Decide the shape of the Button to be shown.
-   * @type "primary" | undefined
+   * @type "primary" | "solidLight" | "solidSub" | undefined
    */
   styleType?: ButtonStyleType;
   /**
