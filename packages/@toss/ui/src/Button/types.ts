@@ -1,6 +1,13 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-export type ButtonStyleType = "primary" | "solidLight" | "solidSub";
+export const BUTTON_STYLE_KEYS = {
+  PRIMARY: "primary",
+  SOLID_LIGHT: "solidLight",
+  SOLID_SUB: "solidSub",
+} as const;
+
+export type ButtonStyleType =
+  (typeof BUTTON_STYLE_KEYS)[keyof typeof BUTTON_STYLE_KEYS];
 export type ButtonSize = "small" | "medium" | "large";
 export type ButtonProps = {
   /**

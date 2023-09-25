@@ -1,6 +1,6 @@
 import { Button } from ".";
 import type { Meta, StoryObj } from "@storybook/react";
-import type { ButtonProps } from "./types";
+import { ButtonProps, BUTTON_STYLE_KEYS } from "./types";
 
 const meta: Meta<ButtonProps> = {
   argTypes: {
@@ -13,7 +13,7 @@ const meta: Meta<ButtonProps> = {
     },
     styleType: {
       control: { type: "radio" },
-      options: ["primary", "solidLight", "solidSub"],
+      options: Object.values(BUTTON_STYLE_KEYS),
     },
     onClick: () => console.log("clicked!!"),
   },
