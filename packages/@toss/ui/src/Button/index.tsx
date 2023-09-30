@@ -3,16 +3,15 @@ import { Styled } from "./styled";
 import type { ButtonProps } from "./types";
 
 export const Button = forwardRef(function Button(
-  props: ButtonProps,
-  ref: ForwardedRef<HTMLButtonElement>
-) {
-  const {
+  {
     styleType = "primary",
     size = "medium",
     width = "100%",
     children,
-  } = props;
-
+    ...props
+  }: ButtonProps,
+  ref: ForwardedRef<HTMLButtonElement>
+) {
   return (
     <Styled.Button
       ref={ref}
