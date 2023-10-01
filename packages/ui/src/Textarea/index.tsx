@@ -30,6 +30,8 @@ const StyledTextarea = styled.textarea<TextareaProps>`
   height: ${({ height }) => height};
   padding: 11px 16px;
   border-radius: 8px;
+  resize: none;
+  overflow: auto;
   border: none;
   outline: none;
 
