@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - packages/@toss/ui/src/**
+      - packages/ui/src/**
 
 jobs:
   chromatic-deploy:
@@ -43,13 +43,13 @@ jobs:
 
       - name: Install Dependency
         run: pnpm install -no-frozen-lockfile
-        working-directory: packages/@toss/ui
+        working-directory: packages/ui
 
       - name: Publish Chromatic
         id: chromatic
         uses: chromaui/action@v1
         with:
-          workingDir: packages/@toss/ui/src
+          workingDir: packages/ui/src
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
