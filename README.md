@@ -1,3 +1,3 @@
-<div align="center">
-  <h1>Toss Design System</h1>
-</div>
+# Toss Design System (TDS)
+
+> This repository is clone of Toss Design System (TDS)
